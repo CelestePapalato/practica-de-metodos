@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    public float Velocidad { get; set; } = 1;
+    [SerializeField]
+    private float _velocidad = 15;
+    public float Velocidad { get => _velocidad; set => _velocidad = value; }
 
     Rigidbody _rb;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-        _rb.AddForce(transform.forward * Velocidad * Time.fixedDeltaTime, ForceMode.VelocityChange);
+    }
+
+    private void Start()
+    {
+        _rb.AddForce(transform.forward * _velocidad * Time.fixedDeltaTime, ForceMode.VelocityChange);
+        Destroy(gameObject, 5);
     }
 }
