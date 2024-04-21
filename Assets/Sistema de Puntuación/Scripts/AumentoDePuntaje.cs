@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-public class Objeto : MonoBehaviour, IPointerClickHandler
+public class AumentoDePuntaje : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
     int _puntos;
