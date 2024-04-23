@@ -300,9 +300,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
-  m_Constraint: 2
+  m_CellSize: {x: 600, y: 60}
+  m_Spacing: {x: 0, y: 20}
+  m_Constraint: 1
   m_ConstraintCount: 1
 --- !u!114 &409710295
 MonoBehaviour:
@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 710659159}
   - component: {fileID: 710659158}
   - component: {fileID: 710659157}
+  - component: {fileID: 710659161}
   m_Layer: 0
   m_Name: Verde
   m_TagString: Untagged
@@ -480,6 +481,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710659161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710659156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae50277bf171a144971962d741a15e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callQuestManagerOnStart: 0
+  _questsToActivate: []
+  _questsToCancel:
+  - {fileID: 11400000, guid: d3c879cec20488b43858cd9d68b79b4e, type: 2}
+  - {fileID: 11400000, guid: 3f8a1f2c5575ad54badc5de18f6598e5, type: 2}
+  _questsToComplete:
+  - {fileID: 11400000, guid: 2394b25a672c30241bc660625b088432, type: 2}
+--- !u!1001 &878768534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3806917410602419528, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_Name
+      value: QuestActor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205566928532666517, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597334797604989465, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: callQuestManagerOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597334797604989465, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: _questsToActivate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597334797604989465, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: _questsToActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f8a1f2c5575ad54badc5de18f6598e5, type: 2}
+    - target: {fileID: 7597334797604989465, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: _questsToActivate.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d3c879cec20488b43858cd9d68b79b4e, type: 2}
+    - target: {fileID: 7597334797604989465, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
+      propertyPath: _questsToActivate.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2394b25a672c30241bc660625b088432, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 404070f95dd799f4aa8ac07062c93bfe, type: 3}
 --- !u!1 &997962175
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +683,7 @@ GameObject:
   - component: {fileID: 1569564692}
   - component: {fileID: 1569564691}
   - component: {fileID: 1569564690}
+  - component: {fileID: 1569564694}
   m_Layer: 0
   m_Name: Rojo
   m_TagString: Untagged
@@ -679,6 +777,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1569564694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569564689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae50277bf171a144971962d741a15e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callQuestManagerOnStart: 0
+  _questsToActivate: []
+  _questsToCancel: []
+  _questsToComplete:
+  - {fileID: 11400000, guid: d3c879cec20488b43858cd9d68b79b4e, type: 2}
 --- !u!1 &1595711707
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +980,7 @@ GameObject:
   - component: {fileID: 1731051782}
   - component: {fileID: 1731051781}
   - component: {fileID: 1731051780}
+  - component: {fileID: 1731051784}
   m_Layer: 0
   m_Name: Azul
   m_TagString: Untagged
@@ -958,6 +1074,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1731051784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731051779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae50277bf171a144971962d741a15e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callQuestManagerOnStart: 0
+  _questsToActivate: []
+  _questsToCancel: []
+  _questsToComplete:
+  - {fileID: 11400000, guid: 3f8a1f2c5575ad54badc5de18f6598e5, type: 2}
 --- !u!1 &1780719710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,9 +1188,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 600, y: 100}
+  m_CellSize: {x: 600, y: 30}
   m_Spacing: {x: 0, y: 10}
-  m_Constraint: 2
+  m_Constraint: 1
   m_ConstraintCount: 1
 --- !u!114 &1780719715
 MonoBehaviour:
@@ -1189,3 +1322,4 @@ SceneRoots:
   - {fileID: 1862519400}
   - {fileID: 1595711710}
   - {fileID: 230063822}
+  - {fileID: 878768534}
