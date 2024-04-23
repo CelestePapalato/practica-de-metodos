@@ -215,6 +215,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &230063820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230063822}
+  - component: {fileID: 230063821}
+  m_Layer: 0
+  m_Name: QuestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230063821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230063820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f51077e94594064e86c8746b0953598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _misionesActivas: []
+--- !u!4 &230063822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230063820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.2682652, y: 1.71, z: -2.8348272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409710293
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd53d0bfca30544a984a068e8609a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tipoDeMisiones: 1
+  _questUIPrefab: {fileID: 5353520624291939295, guid: 6d5b093311a04b44da145968d96281b3, type: 3}
 --- !u!1 &710659156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,8 +1055,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 600, y: 100}
+  m_Spacing: {x: 0, y: 10}
   m_Constraint: 2
   m_ConstraintCount: 1
 --- !u!114 &1780719715
@@ -1024,52 +1071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd53d0bfca30544a984a068e8609a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1788561041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1788561043}
-  - component: {fileID: 1788561042}
-  m_Layer: 0
-  m_Name: Quest Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1788561042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788561041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f51077e94594064e86c8746b0953598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _UIListaPrincipales: {fileID: 1780719714}
-  _UIListaSecundarias: {fileID: 409710294}
---- !u!4 &1788561043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788561041}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2682652, y: 1.71, z: -2.8348272}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  _tipoDeMisiones: 0
+  _questUIPrefab: {fileID: 5353520624291939295, guid: 6d5b093311a04b44da145968d96281b3, type: 3}
 --- !u!1 &1862519399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1171,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1185,4 +1188,4 @@ SceneRoots:
   - {fileID: 710659160}
   - {fileID: 1862519400}
   - {fileID: 1595711710}
-  - {fileID: 1788561043}
+  - {fileID: 230063822}
